@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220314 09:32:49.718" rpa="false" schemaversion="2">
+<suite id="s1" name="TestDemo1" source="C:\Users\befor\PycharmProjects\RobotFramework\Tests\TestDemo1.robot">
+<test id="s1-t1" name="Validate form fill in">
+<kw name="Open the Url">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/befor/New folder/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220314 09:32:49.929" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220314 09:32:49.929" endtime="20220314 09:32:51.255"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://demoqa.com/text-box</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220314 09:32:51.255" level="INFO">Opening url 'https://demoqa.com/text-box'</msg>
+<status status="PASS" starttime="20220314 09:32:51.255" endtime="20220314 09:33:09.059"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220314 09:33:09.060" endtime="20220314 09:33:09.242"/>
+</kw>
+<status status="PASS" starttime="20220314 09:32:49.928" endtime="20220314 09:33:09.242"/>
+</kw>
+<kw name="Fill in the required info">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:userName</arg>
+<arg>Joe Biden</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220314 09:33:09.244" level="INFO">Typing text 'Joe Biden' into text field 'id:userName'.</msg>
+<status status="PASS" starttime="20220314 09:33:09.244" endtime="20220314 09:33:09.390"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:userEmail</arg>
+<arg>Joe@att.net</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220314 09:33:09.391" level="INFO">Typing text 'Joe@att.net' into text field 'id:userEmail'.</msg>
+<status status="PASS" starttime="20220314 09:33:09.391" endtime="20220314 09:33:09.546"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:currentAddress</arg>
+<arg>211 Madison Ave NY</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220314 09:33:09.546" level="INFO">Typing text '211 Madison Ave NY' into text field 'id:currentAddress'.</msg>
+<status status="PASS" starttime="20220314 09:33:09.546" endtime="20220314 09:33:09.648"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,400)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220314 09:33:09.649" level="INFO">Executing JavaScript:
+window.scrollTo(0,400)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220314 09:33:09.648" endtime="20220314 09:33:09.653"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>id:submit</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220314 09:33:09.653" endtime="20220314 09:33:09.948"/>
+</kw>
+<status status="PASS" starttime="20220314 09:33:09.243" endtime="20220314 09:33:09.949"/>
+</kw>
+<kw name="Click submit">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220314 09:33:09.952" level="INFO">Clicking button 'id:submit'.</msg>
+<status status="PASS" starttime="20220314 09:33:09.951" endtime="20220314 09:33:10.126"/>
+</kw>
+<status status="PASS" starttime="20220314 09:33:09.950" endtime="20220314 09:33:10.126"/>
+</kw>
+<kw name="Verify the form is submitted">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://body/div[@id='app']/div[1]/div[1]/div[2]/div[2]/div[2]/form[1]/div[6]/div[1]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220314 09:33:10.178" level="INFO">Element 'xpath://body/div[@id='app']/div[1]/div[1]/div[2]/div[2]/div[2]/form[1]/div[6]/div[1]' is displayed.</msg>
+<status status="PASS" starttime="20220314 09:33:10.128" endtime="20220314 09:33:10.178"/>
+</kw>
+<status status="PASS" starttime="20220314 09:33:10.127" endtime="20220314 09:33:10.179"/>
+</kw>
+<status status="PASS" starttime="20220314 09:32:49.928" endtime="20220314 09:33:10.180"/>
+</test>
+<doc>Fill in the form</doc>
+<status status="PASS" starttime="20220314 09:32:49.722" endtime="20220314 09:33:10.182"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestDemo1">TestDemo1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
