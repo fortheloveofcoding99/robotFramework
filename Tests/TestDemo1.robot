@@ -30,5 +30,7 @@ Click submit
 
 Verify the form is submitted
     ELEMENT SHOULD BE VISIBLE   xpath://body/div[@id='app']/div[1]/div[1]/div[2]/div[2]/div[2]/form[1]/div[6]/div[1]
+    ${result} =     get text    xpath://body/div[@id='app']/div[1]/div[1]/div[2]/div[2]/div[2]/form[1]/div[6]/div[1]
+    Log to Console  ${result}
 
 
