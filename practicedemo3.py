@@ -1,18 +1,25 @@
 
+class musicLibrary:
 
-list1 = [6, "Bewerbung", "Uhr", "Geshiste", "Aufgaben", "Mein Leid"]
-print(list1)
-list1.pop()
-print(list1)
-list1.remove(list1[2])
-list1.append("termin")
-print(list1)
+    def __init__(self, l, s):
+        self.leid = l
+        self.sangerin = s
 
-tuple1 =("rot", "grun", "blau", 23)
-print(tuple1)
+    def display(self):
+        print("Welches lied " + (self.leid))
+        print("Wer is der sanger " + (self.sangerin))
 
-str1 = "Deutsch ist Einfach"
-set1 = set(str1)
-print(set1)
+
+leid = ""
+
+sangerin = ""
+
+
+
+obj = musicLibrary("mein Lied", "Berge")
+
+
+obj.display()
+
 
 
