@@ -1,15 +1,20 @@
+class arbeit:
+    def __init__(self, unternehmen, gehalt, position, datum, webseite):
+        self.unternehmen = unternehmen
+        self.gehalt = gehalt
+        self.position = position
+        self.datum = datum
+        self.webseite = webseite
+        self.email = position + "@" + unternehmen + ".com"
+
+    def die_details(self):
+        return '{} {} {} {}'.format(self.unternehmen, self.gehalt, self.position, self.datum)
 
 
-x, y, z = 2, 3.5, "Python"
+bewerbung1 = arbeit("lancom", 45000, "Prüfingenieur", "ersten juli", "scotty4hotty")
+bewerbung2 = arbeit("debeka", 46000, "Prüfingenieur", "ersten mai", "stellenganzen.de")
+bewerbung3 = arbeit("thinkcell", 47000, "Prüfingenieur", "ersten januar", "linkedin")
 
-print("{} {} {} {} {} {}".format("Integer is", x, "Float is", y, "This is concatenate in lang", z))
+print(bewerbung1.email)
 
-print("Is of", type(y))
-
-list1 = ["ersten Element", 2, 3.14, 6.023, "zweiten Element"]
-print(list1)
-list1.append("das funfth element")
-print(list1)
-list1.insert(2, "kuche")
-print(list1)
-
+print(arbeit.die_details(bewerbung1))
